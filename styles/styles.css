@@ -1,30 +1,54 @@
-.banner {
-    background-color: red;
+header {
+    background-color: rgb(119, 21, 21);
     padding: 77px;
 
     display: grid;
     grid: 1fr / auto auto;
 
     align-items: center;
+
+    font-family: 'DIN 1451 Std',sans-serif, monospace;
 }
 
 .banner-title {
-    background-color: aqua;
-    min-height: 400px;
-    min-width: 400px;
+    min-height: 500px;
+    min-width: 500px;
 
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    background: url("/assets/images/about.jpg") center/cover no-repeat;
+    background-size: 100%;
+
+    border: 4px solid gray;
+    border-radius: 10px;
+}
+.banner-title h1{
+    color: yellow;
+
 }
 
 .banner-about {
-    background-color: mediumaquamarine;
+    background-color: rgb(226, 225, 225);
     height: 66%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
     padding: 6% 1%;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+.about-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+.about-icons *{
+    scale: 2;
+}
+
