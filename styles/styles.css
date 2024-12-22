@@ -139,3 +139,13 @@ footer {
 .footer-img{
     flex:0.6;
 }
+
+.footer-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons a *{
+    display: block;
+    font-size: 2rem;
+}
