@@ -53,7 +53,7 @@ header {
 }
 
 .about-icons *{
-    scale: 2;
+    font-size: 2rem;
 }
 
 main {
@@ -138,6 +138,7 @@ footer {
 
 .footer-img{
     flex:0.6;
+    padding: 0px 10%;
 }
 
 .footer-icons{
@@ -148,4 +149,53 @@ footer {
 .footer-icons a *{
     display: block;
     font-size: 2rem;
+}
+
+/*Mobile View*/
+@media only screen and (max-width: 480px){
+    
+
+    header{
+        padding: 10px 17px;
+        display: flex;
+        width: auto;
+
+        align-items: center;
+        justify-items: center;
+
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+    .banner-title{
+        min-width: 200px;
+        min-height: 333px;
+        max-width: 85%;
+        max-height: fit-content;
+    }
+
+    .banner-about{
+        background-color: #fff;
+        box-shadow: none;
+    }
+    .about-icons{
+        justify-content: center;
+    }
+
+    main{
+        padding: 10px 17px;
+    }
+
+    .my-work-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 10px 17px;
+        flex-direction: column;
+        gap: 21px;
+    }
+
 }
